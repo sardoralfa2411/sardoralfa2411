@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #32CD32;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.enemy {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FF4500;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveEnemy linear infinite 2s;
+}
+@keyframes moveEnemy {
+    to {
+        top: 100%;
+    }
+}
